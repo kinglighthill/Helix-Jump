@@ -3,17 +3,18 @@ using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
-    public float rotationSpeed = 10;
+    private float rotationSpeed = 10;
 
     // Update is called once per frame
     void Update()
     {
         if (!GameManager.isGameStarted)
             return;
+
         //if (Input.GetMouseButton(0))
         //{
         //    float mouseX = Input.GetAxisRaw("Mouse X");
-        //    transform.Rotate(0, -mouseX * rotationSpeed * Time.deltaTime, 0);
+        //    transform.Rotate(0, -mouseX * rotationSpeed * 1500 * Time.deltaTime, 0);
         //}
 
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)

@@ -13,7 +13,6 @@ public class HelixManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(GameManager.currentLevelIndex);
         numberOfRings = GameManager.currentLevelIndex + 5;
         for (int i = 0; i < numberOfRings; i++)
         {

@@ -53,14 +53,14 @@ public class AdsManager : MonoBehaviour
 
     private void RequestBanner()
     {
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitId = "ca-app-pub-3940256099942544/3419835294";
         this.bannerAd = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Bottom);
         this.bannerAd.LoadAd(this.CreateAdRequest());
     }
 
     public void RequestInterstitial()
     {
-        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+        string adUnitId = "ca-app-pub-3940256099942544/3419835294";
         if (this.interstitialAd != null)
             this.interstitialAd.Destroy();
 
@@ -83,7 +83,7 @@ public class AdsManager : MonoBehaviour
 
     public void RequestRewarded()
     {
-        string adUnitId = "ca-app-pub-3940256099942544/5224354917";
+        string adUnitId = "ca-app-pub-3940256099942544/3419835294";
         this.rewardedAd = new RewardedAd(adUnitId);
         this.rewardedAd.LoadAd(CreateAdRequest());
     }
